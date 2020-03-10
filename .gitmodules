@@ -1,0 +1,6 @@
+[submodule "Conferences/AAAI/HERS_github"]
+	path = Conferences/AAAI/HERS_github
+	url = https://github.com/giovanni-bozzano/recsys-hers.git
+[submodule "Conferences/CIKM/NCR_github"]
+	path = Conferences/CIKM/NCR_github
+	url = https://github.com/giovanni-bozzano/recsys-neural-collaborative-ranking.git

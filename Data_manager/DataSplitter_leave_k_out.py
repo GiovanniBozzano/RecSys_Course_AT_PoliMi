@@ -12,7 +12,7 @@ from Base.DataIO import DataIO
 
 from Data_manager.DataSplitter import DataSplitter
 from Data_manager.DataReader_utils import compute_density, reconcile_mapper_with_removed_tokens
-from Data_manager.Split_functions.split_train_validation_leave_k_out import split_train_leave_k_out_user_wise
+from Data_manager.split_functions.split_train_validation_leave_k_out import split_train_leave_k_out_user_wise
 from Data_manager.data_consistency_check import assert_disjoint_matrices, assert_URM_ICM_mapper_consistency
 
 
