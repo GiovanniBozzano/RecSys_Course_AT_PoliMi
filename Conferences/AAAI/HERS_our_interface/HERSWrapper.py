@@ -197,6 +197,8 @@ class HERSWrapper(BaseRecommender, Incremental_Training_Early_Stopping, BaseTemp
                                user_mask=None)
         self.model.triplet_model.compile(loss=loss, optimizer='adam')
         self.model.user_embed.set_weights(pretrain_model.user_emb.get_weights())
+        self.model.user_attention_first_embed.set_weights(pretrain_model.user_emb.get_weights())
+        self.model.user_attention_second_embed.set_weights(pretrain_model.user_emb.get_weights())
         self.model.item_embed.set_weights(pretrain_model.item_emb.get_weights())
 
         self.batchGenerator = TripletGenerator(self.G_user, self.model, self.G_ui, self.G_item)
